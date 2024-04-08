@@ -1,4 +1,5 @@
 # Live Preview - VS Code Extension 📡
+It's been modified to show preview above current tab :)
 
 ⚠️ WARNING: This extension is still under development! ⚠️
 
