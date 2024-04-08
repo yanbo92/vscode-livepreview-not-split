@@ -66,7 +66,7 @@ export class PreviewManager extends Disposable {
 		// If we already have a panel, show it.
 		if (this.currentPanel) {
 			await this.currentPanel.reveal(
-				vscode.ViewColumn.Beside,
+				vscode.ViewColumn.One,
 				path,
 				connection
 			);
@@ -78,7 +78,7 @@ export class PreviewManager extends Disposable {
 			panel = vscode.window.createWebviewPanel(
 				BrowserPreview.viewType,
 				INIT_PANEL_TITLE,
-				vscode.ViewColumn.Beside,
+				vscode.ViewColumn.One,
 				{
 					...this.getWebviewOptions(),
 					...this._getWebviewPanelOptions(),
